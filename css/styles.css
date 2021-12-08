@@ -1,0 +1,38 @@
+body{
+
+  background-color: #2D3142;
+}
+
+table{
+
+  border: 1px;
+  background-color: #D8D5DB;
+  border-radius: 50px;
+  padding-left: 10px;
+
+
+}
+
+td{
+
+  width: 30%;
+
+}
+
+h1{
+  background-color: #D8D5DB;
+  width: 250px;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+h3{
+  background-color: #D8D5DB;
+  width: 105px;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+p,li,a{
+  color: #EAE8FF;
+}
