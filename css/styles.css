@@ -33,6 +33,10 @@ h3{
   padding-left: 10px;
 }
 
-p,li,a{
+p,li{
   color: #EAE8FF;
+}
+
+a{
+  color: #2D3142;
 }
