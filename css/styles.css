@@ -1,43 +1,40 @@
-body{
-
-  background-color: #2D3142;
+body {
+  background-color: #2d3142;
 }
 
-table{
-
+table {
   border: 1px;
-  background-color: #D8D5DB;
+  background-color: #d8d5db;
   border-radius: 50px;
   padding-left: 10px;
-
-
 }
 
-td{
-
+td {
   width: 30%;
-  color: #2D3142;
-
 }
 
-h1{
-  background-color: #D8D5DB;
+h1 {
+  background-color: #d8d5db;
   width: 250px;
   border-radius: 50px;
   padding-left: 10px;
 }
-
-h3{
-  background-color: #D8D5DB;
+s h3 {
+  background-color: #d8d5db;
   width: 105px;
   border-radius: 50px;
   padding-left: 10px;
 }
 
-p,li{
-  color: #EAE8FF;
+p,
+li {
+  color: #eae8ff;
 }
 
-a{
-  color: #EAE8FF;
+a {
+  color: #eae8ff;
+}
+
+.menu {
+  color: #2d3142;
 }
