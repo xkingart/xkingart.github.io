@@ -9,6 +9,12 @@ table {
   padding-left: 10px;
 }
 
+img {
+
+  border-radius: 50px;
+
+}
+
 td {
   width: 30%;
 }
