@@ -35,6 +35,10 @@ a {
   color: #eae8ff;
 }
 
+.menu:hover {
+  color:rgb(31, 128, 141)
+}
+
 .menu {
   color: #2d3142;
 }
