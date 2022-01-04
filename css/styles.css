@@ -7,63 +7,6 @@ body {
 
 }
 
-.mainBody
-{
-margin-top: 1%; 
-
-}
-
-
-.menu:hover {
-  color:rgb(31, 128, 141)
-}
-
-.menu {
-  color: #2d3142;
-  padding: 1%;
-}
-
-.navbar
-{
-padding: 1%;
-background-color: #d8d5db;
-
-}
-
-/*url tag in css takes file location realtive to css file not from html file*/
-
-.midBody
-{
-  position: absolute; left: 80%; top:160%;
-
-  
-}
-
-#prettybody
-{
-  background-color: #0a0931; 
-  background-image: url("../assets/howling.jpg");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-#prettyh1
-{
-  
-  padding-left: 10%;
-}
-
-#prettyh2
-{
-  position: absolute; left: 70%; top:150%;
-  color: #eae8ff;
-  background-color: transparent;
-  width: 400px;
-}
-
 img {
 
   border-radius: 50px;
@@ -103,5 +46,64 @@ p{
 
 a {
   color: #eae8ff;
+}
+
+
+.mainBody
+{
+margin-top: 1%; 
+
+}
+
+
+.menu:hover {
+  color:rgb(31, 128, 141)
+}
+
+.menu {
+  color: #2d3142;
+  padding: 1%;
+}
+
+.navbar
+{
+padding: 1%;
+background-color: #d8d5db;
+
+}
+
+/*url tag in css takes file location realtive to css file not from html file*/
+
+#statement
+{
+  position: absolute; right: 20%; top:9%;
+
+  
+}
+
+
+#prettybody
+{
+  background-color: #0a0931; 
+  background-image: url("../assets/howling.jpg");
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: auto;
+}
+
+#prettyh1
+{
+  
+  padding-left: 2%;
+}
+
+#prettyh2
+{
+  color: #eae8ff;
+  background-color: transparent;
+  padding-left: 2%;
+  width: 400px;
 }
 
