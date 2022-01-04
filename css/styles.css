@@ -62,13 +62,6 @@ background-color: #d8d5db;
   width: 400px;
 }
 
-table {
-  border: 1px;
-  background-color: #d8d5db;
-  border-radius: 50px;
-  padding-left: 10px;
-}
-
 img {
 
   border-radius: 50px;
@@ -96,6 +89,7 @@ h3 {
 p,
 li {
   color: #eae8ff;
+  padding-left: 10px;
 }
 
 a {
