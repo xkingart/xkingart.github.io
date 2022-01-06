@@ -49,7 +49,7 @@ a {
 }
 
 
-.mainBody
+.main-cont
 {
 margin-top: 1%; 
 
@@ -65,7 +65,7 @@ margin-top: 1%;
   padding: 1%;
 }
 
-.navbar
+.top-container
 {
 padding: 1%;
 background-color: #d8d5db;
