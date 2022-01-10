@@ -76,38 +76,3 @@ background-color: #d8d5db;
 }
 
 /*url tag in css takes file location realtive to css file not from html file*/
-
-#statement
-{
-  position: absolute; right: 20%; top:9%;
-
-  
-}
-
-
-#prettybody
-{
-  background-color: #0a0931; 
-  background-image: url("../assets/howling.jpg");
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: auto;
-  margin:0 auto;
-}
-
-#prettyh1
-{
-  
-  padding-left: 2%;
-}
-
-#prettyh2
-{
-  color: #eae8ff;
-  background-color: transparent;
-  padding-left: 2%;
-  width: 400px;
-}
-
