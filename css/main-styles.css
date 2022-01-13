@@ -4,7 +4,7 @@ body {
   margin-left: 0px;
   margin-right: 0px;
   background-color: #2d3142;
-
+  font-size: 1em;
 }
 
 img {
@@ -76,3 +76,4 @@ background-color: #d8d5db;
 }
 
 /*url tag in css takes file location realtive to css file not from html file*/
+/*use rem to change font sizes after the root so that it doesnt inherit*/

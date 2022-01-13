@@ -19,8 +19,9 @@
 #statement {
   position: absolute;
   right: 20%;
-  top: 9%;
+  top: 20%;
   color: #eae8ff;
+  font-size: 2rem;
 }
 
 #prettybody {
@@ -34,4 +35,6 @@
   margin: 0 auto;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-size: 1em;
 }
+
