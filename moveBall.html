@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css\main-styles.css" />
+    <link rel="icon" href="assets\favicon.ico">
+  </head>
+
+<div class = "mainBody">
+
+  <body>
+    <div class="top-container">
+
+      <strong><a class = "menu" href="index.html">Home</a></strong>
+      <strong><a class = "menu" href="contact-me.html">Contact Me</a></strong>
+      <strong><a class = "menu" href="projects.html">Projects</a></strong>
+      
+    </div>
+
+   <div class ="middle-container">
+
+
+
+    <div
+    id="ball"
+    style="
+      z-index: 5;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: green;
+    "
+  ></div>
+  
+  <script>
+    var velocityX = 5;
+    var velocityY = 3;
+    var positionX = 0;
+    var positionY = 0;
+    var ball = document.getElementById("ball");
+  
+    // YOUR CODE
+    // ----------------
+  
+  
+  //change color
+  
+  
+  
+  //add ball
+  
+  
+  
+  //move ball
+  
+    function animeBall() {
+      positionX = positionX + velocityX;
+      positionY = positionY + velocityY;
+      ball.style.left = positionX + "px";
+      ball.style.top = positionY + "px";
+    }
+  
+  //change in velocity
+  
+    function changeDirectionX(){
+      
+      velocityX = -velocityX;
+    }
+  
+    function changeDirectionY(){
+      
+      velocityY = -velocityY;
+    }
+  
+    //maintain direction
+  
+    function currentDirection(){
+  
+      if(positionX<200)
+      {
+        animeBall();
+      }
+  
+      if(positionY<200)
+      {
+        animeBall();
+      }
+  
+  
+  
+  //reverse when out of bounds
+  
+      if(positionX>=200)
+      {
+        changeDirectionX();
+        animeBall();
+      }
+  
+      if(positionY>=200)
+      {
+        changeDirectionY();
+        animeBall();
+      }
+  
+  
+      //reverse when out of bounds
+  
+  
+      if(positionX<=0)
+      {
+        changeDirectionX();
+        animeBall();
+      }
+      if(positionY<=0)
+      {
+        changeDirectionY();
+        animeBall();
+      }
+  
+    }
+  
+    setInterval(currentDirection, 100);
+  </script>
+  
+
+
+
+
+
+  </div> 
+
+  <div class="bottom-container"> 
+
+
+  </div>
+
+</div>
+  </body>
+</html>
+
+
+
