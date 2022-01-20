@@ -48,12 +48,10 @@
   
   
   //change color
-  
-  
-  
-  //add ball
-  
-  
+  function changeColor(){
+
+    ball.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
+  }
   
   //move ball
   
@@ -98,12 +96,16 @@
       {
         changeDirectionX();
         animeBall();
+        changeColor();
+        addBalls();
       }
   
       if(positionY>=200)
       {
         changeDirectionY();
         animeBall();
+        changeColor();
+        addBalls();
       }
   
   
@@ -114,11 +116,15 @@
       {
         changeDirectionX();
         animeBall();
+        changeColor();
+        addBalls();
       }
       if(positionY<=0)
       {
         changeDirectionY();
         animeBall();
+        changeColor();
+        addBalls();
       }
   
     }
@@ -126,10 +132,6 @@
     setInterval(currentDirection, 100);
   </script>
   
-
-
-
-
 
   </div> 
 
