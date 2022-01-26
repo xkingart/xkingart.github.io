@@ -19,120 +19,151 @@
     </div>
 
    <div class ="middle-container">
-
-
-
-    <div
-    id="ball"
-    style="
-      z-index: 5;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background: green;
-    "
-  ></div>
   
-  <script>
-    var velocityX = 5;
-    var velocityY = 3;
-    var positionX = 0;
-    var positionY = 0;
-    var ball = document.getElementById("ball");
-  
-    // YOUR CODE
-    // ----------------
-  
-  
-  //change color
-  function changeColor(){
-
-    ball.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
-  }
-  
-  //move ball
-  
-    function animeBall() {
-      positionX = positionX + velocityX;
-      positionY = positionY + velocityY;
-      ball.style.left = positionX + "px";
-      ball.style.top = positionY + "px";
-    }
-  
-  //change in velocity
-  
-    function changeDirectionX(){
-      
-      velocityX = -velocityX;
-    }
-  
-    function changeDirectionY(){
-      
-      velocityY = -velocityY;
-    }
-  
-    //maintain direction
-  
-    function currentDirection(){
-  
-      if(positionX<200)
-      {
-        animeBall();
-      }
-  
-      if(positionY<200)
-      {
-        animeBall();
-      }
-  
-  
-  
-  //reverse when out of bounds
-  
-      if(positionX>=200)
-      {
-        changeDirectionX();
-        animeBall();
-        changeColor();
-      }
-  
-      if(positionY>=200)
-      {
-        changeDirectionY();
-        animeBall();
-        changeColor();
-      }
-  
-  
-      //reverse when out of bounds
-  
-  
-      if(positionX<=0)
-      {
-        changeDirectionX();
-        animeBall();
-        changeColor();
-      }
-      if(positionY<=0)
-      {
-        changeDirectionY();
-        animeBall();
-        changeColor();
-      }
-  
-    }
-  
-    setInterval(currentDirection, 100);
-  </script>
-  
-
   </div> 
 
   <div class="bottom-container"> 
 
+    <script>
+     
+      const ballArray = [];
+      // YOUR CODE
+      // ----------------
+    
+  function ballFactory(){
+    if(ballArray.length == 100)
+{
+  return;
+}
+//get a container  using getElement 
+  var container = document.getElementsByClassName("middle-container")[0];
+  //make ball to go into container 
+  var ball = document.createElement("div");
+  //set values of style of the ball
+  ball.style.zIndex= 5;
+  ball.style.position ="absolute";
+  ball.style.left = "0px";
+  ball.style.top= "0px";
+  ball.style.width="50px";
+  ball.style.height="50px";
+  ball.style.borderRadius="50%";
+  ball.style.background="green";
+ //append the child to the parent , parent comes first  
+  container.appendChild(ball);
+  var ballValues ={velocityX:5,velocityY:2,positionX:0,positionY:0,htmlObject:ball};
+  //push the ball into the array when created 
+ballArray.push(ballValues);
+  }
+  
+  
+    //change color
+    function changeColor(i){
+      
+      var ballValues = ballArray[i];
+      
+      ballValues.htmlObject.style.background = '#'+Math.floor(Math.random()*16777215).toString(16);
+    }
+    
+    //move ball
+    
+      function animeBall(i) {
+
+        //bring down array variable to use in funtion 
+        var ballValues = ballArray[i];
+//accesing array  postion and velocity 
+        ballValues.positionX = ballValues.positionX + ballValues.velocityX;
+        ballValues.positionY = ballValues.positionY + ballValues.velocityY;
+       //requires html object becuase changing the part of the array named html object that has the div which we are changing the style of 
+        ballValues.htmlObject.style.left = ballValues.positionX + "px";
+        ballValues.htmlObject.style.top = ballValues.positionY + "px";
+
+      }
+    
+    //change in velocity
+    
+      function changeDirectionX(i){
+
+        var ballValues = ballArray[i];
+        ballValues.velocityX = -ballValues.velocityX;
+      }
+    
+      function changeDirectionY(i){
+        
+        var ballValues = ballArray[i];
+        ballValues.velocityY = -ballValues.velocityY;
+      }
+    
+      //maintain direction
+    
+      function currentDirection(){
+
+        var addNewBall = false;
+for(let i =0;i<ballArray.length;i++){
+
+        var ballValues = ballArray[i];
+    
+        if(ballValues.positionX<200)
+        {
+          animeBall(i);
+        }
+    
+        if(ballValues.positionY<200)
+        {
+          animeBall(i);
+        }
+    
+    
+    
+    //reverse when out of bounds
+    
+        if(ballValues.positionX>=200)
+        {
+          changeDirectionX(i);
+          animeBall(i);
+          changeColor(i);
+          addNewBall = true;
+        }
+    
+        if(ballValues.positionY>=200)
+        {
+          changeDirectionY(i);
+          animeBall(i);
+          changeColor(i);
+          addNewBall = true;
+        }
+    
+    
+        //reverse when out of bounds
+    
+    
+        if(ballValues.positionX<=0)
+        {
+          changeDirectionX(i);
+          animeBall(i);
+          changeColor(i);
+          addNewBall = true;
+        }
+        if(ballValues.positionY<=0)
+        {
+          changeDirectionY(i);
+          animeBall(i);
+          changeColor(i);
+          addNewBall = true;
+        }
+
+
+      }
+
+      if (addNewBall==true)
+      {
+        ballFactory();
+      }
+    
+      }
+    
+      ballFactory();
+      setInterval(currentDirection, 100);
+    </script>
 
   </div>
 
