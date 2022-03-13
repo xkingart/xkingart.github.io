@@ -1,0 +1,39 @@
+{
+	"random": "76",
+	"random float": "70.282",
+	"bool": "true",
+	"date": "1992-07-07",
+	"regEx": "helloooooooooooooo to you",
+	"enum": "json",
+	"firstname": "Christian",
+	"lastname": "Sikorski",
+	"city": "New York City",
+	"country": "Luxembourg",
+	"countryCode": "ZA",
+	"email uses current data": "Christian.Sikorski@gmail.com",
+	"email from expression": "Christian.Sikorski@yopmail.com",
+	"array": [
+		"Ermengarde",
+		"Zia",
+		"Bee",
+		"Magdalena",
+		"Philis"
+	],
+	"array of objects": [
+		{
+			"index": "0",
+			"index start at 5": "5"
+		},
+		{
+			"index": "1",
+			"index start at 5": "6"
+		},
+		{
+			"index": "2",
+			"index start at 5": "7"
+		}
+	],
+	"Stephanie": {
+		"age": "32"
+	}
+}
